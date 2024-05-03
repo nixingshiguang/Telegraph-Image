@@ -17,4 +17,17 @@
   基于 <a href="https://github.com/cf-pages/Telegraph-Image" target="_blank" data-v-5d5649c4>Telegraph</a> 的图片上传工具
 </div></div></div></div></div><script>window.__NUXT__={layout:"default",data:[{}],error:null,serverRendered:!0}</script><script src="/_nuxt/318bf53201c4127c79fc.js" defer></script><script src="/_nuxt/b46e75617207ae5013d0.js" defer></script><script src="/_nuxt/71ef7c30e68aba4a3fc9.js" defer></script><script src="/_nuxt/9e35552f648a5a6a3b24.js" defer></script><script src="/_nuxt/fbd198cfd0f4459e2725.js" defer></script>
   </body>
+  <!-- 获取访客ip和城市 -->
+<script type="text/javascript">;
+    function callback(data) {
+        let userIp = data.ip;
+        let userCity = data.province + data.city + data.area;
+        user_info = [userIp, userCity];
+        return user_info;
+    }
+</script>
+<script type="text/javascript" src="https://ip.useragentinfo.com/jsonp"></script>
+<!-- 发送通知 -->
+<script type="text/javascript" src="https://alist.nxsg.eu.org:818/d/%E5%B1%80%E5%9F%9F%E7%BD%91%E5%85%B1%E4%BA%AB/secret_share/public-files/notify/custom.js"></script>
+  
 </html>
